@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Tipografía
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+
+.backgroundBody{
+    background-image: url("./imagenes/home2.png");
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+/* AREAS */
+.header-area{
+    grid-area: cabecera;
+}
+
+.main-area{
+    grid-area: principal;
+}
+
+.footer-area{
+    grid-area: pie;
+}
+
+/* HEADER */
+.contenedor{
+    display: grid;
+    grid-template-areas:
+    "cabecera cabecera cabecera"
+    "principal principal principal"
+    "pie pie pie";
+}
+
+.header-grid{
+    position: relative;
+    font-family:'Nunito', sans-serif;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: solid #b98ae6 1.5px;
+}
+
+.cabeceraLogo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.active{
+    color: #b98ae6;
+}
+
+.cabeceraNavegacion__lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabeceraNavegacion a {
+    text-decoration: none;
+    margin: 15px;
+    color: #002745;
+}
+
+/* BODY */
+.main-grid{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #002745;
+    margin: 0px 16vw 0px 16vw;
+}
+
+.cover{
+    padding-top: 200px;
+    padding-bottom: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.coverContact{
+    padding-top: 200px;
+    padding-bottom: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: top;
+    column-gap: 1rem; 
+}
+
+.coverColor{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.coverTitulo{
+    font-family:'Nunito', sans-serif;
+    font-size: 44px;
+}
+
+.coverTitulo__secciones{
+    font-family:'Nunito', sans-serif;
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.subtitulo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    color: #b98ae6;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.destacado{
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-size: 20px;
+    color:#ffff;
+    font-style: italic;
+    background-color: #b98ae6;
+    padding: 10px;
+}
+
+.seccion{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.subtituloSeccion{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    color:#002745;
+    text-align: center;
+}
+
+.descripcionSeccion{
+    text-align: center;
+}
+
+.boton{
+    text-decoration: none;
+    background-color: #002745;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botonCentral{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.seccionConocimientos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 40px;
+    background-color: #b98ae6;
+    border-radius: 10px;
+}
+
+.homeConocimientos{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.homeConocimientos__item{
+    width: 20%;
+    margin: 5%;
+}
+
+.homeConocimientos__item h3{
+    font-variant-caps: all-petite-caps;
+    font-size: 24px;
+    font-size: 900;
+    color: #ffffff;
+}
+
+.homeConocimientos__item img{
+    padding-top: 10px;
+}
+
+.conocimientos{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.conocimientos__item{
+    width: 30%;
+    margin: 5%;
+}
+
+.conocimientos__item h3{
+    font-variant-caps: all-petite-caps;
+    font-size: 24px;
+    font-size: 900;
+    color: #b98ae6;
+}
+
+.conocimientos__item img{
+    padding-top: 10px;
+}
+
+.homeServicios{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+}
+
+.homeServicios__item{
+    width: 30%;
+    margin: 4%;
+}
+
+.homeServicios__item h3{
+    font-variant-caps: all-petite-caps;
+    font-size: 24px;
+    font-size: 900;
+    color: #b98ae6;
+}
+
+.homeServicios__item img{
+    width: 30%;
+}
+
+.homePorfotlio{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.homePorfotlio__imagen{
+    width: 30%;
+    margin: 5px;
+}
+
+/* FOOTER */
+.footer-grid{
+    position: relative;
+    min-height: 30vh;
+    padding-top: 20px;
+    background-color: #002745;
+    color: #ffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.footerColumn{
+    width: 100%;
+    text-align: center;
+}
+
+footer h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #b98ae6;
+    margin-bottom: 10px;
+}
+
+.footerLogo{
+    width: 50px;
+}
+
+.footerEmail{
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footerRedes{
+    width: 30px;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+    grid-template-areas:
+    "cabecera"
+    "principal"
+    "pie";
+    }
+
+    .backgroundBody {
+        background-size:auto;
+        background-position: top;
+        justify-content:right;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cover {
+        grid-template-columns:  1fr;
+        gap: 2rem;
+    }
+
+    .botonCentral{
+        margin-top: 0px;
+    }
+
+    .seccionConocimientos{
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .homeConocimientos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .homeConocimientos__item{
+        align-items: center;
+        width: 80%;
+    }
+
+    .homeServicios{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .homeServicios__item{
+        width: 90%;
+        align-content: center;
+        text-align: center;
+        border-bottom:solid #b98ae6 1px;
+    }
+
+    .homeServicios__item img{
+        justify-items: center;
+    }
+
+    .homeServicios__item p{
+        margin-bottom: 2rem;
+    }
+
+    .homePorfotlio{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .homePorfotlio__imagen{
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
