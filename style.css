@@ -76,6 +76,11 @@ font-family: 'Nunito Sans', sans-serif;
     color: #002745;
 }
 
+.cabeceraNavegacion__lista li :hover{
+    color: #b98ae6;
+    transform: scale(2);
+}
+
 /* BODY */
 .main-grid{
     margin-left: 50px;
@@ -175,11 +180,19 @@ font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 10px;
 }
 
+.boton:hover{
+    background-color: #b98ae6;
+}
+
 .botonCentral{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 1rem;
+}
+
+.botonCentral :hover{
+    background-color: #b98ae6;
 }
 
 .seccionConocimientos{
@@ -223,7 +236,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .conocimientos__item{
-    width: 30%;
+    width: 20%;
     margin: 5%;
 }
 
@@ -318,6 +331,10 @@ footer h2{
     font-size: 16px;
     color: #ffffff;
     text-decoration: underline;
+}
+
+.footerColumn a:hover{
+    color: #b98ae6;
 }
 
 .footerRedes{
