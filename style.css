@@ -100,14 +100,22 @@ font-family: 'Nunito Sans', sans-serif;
     padding-bottom: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: top;
-    column-gap: 1rem; 
+    column-gap: 1rem;
+    width: 100%;
 }
 
 .coverColor{
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
+}
+
+.coverColumn{
+    display: flex;
+    justify-content:start;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .coverTitulo{
@@ -400,5 +408,32 @@ footer h2{
     .footer-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .conocimientos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conocimientos__item{
+        align-items: center;
+        width: 100%;
+    }
+
+    .coverContact{
+        padding-top: 200px;
+        padding-bottom: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .coverColumn{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
