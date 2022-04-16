@@ -109,6 +109,45 @@ font-family: 'Nunito Sans', sans-serif;
     width: 100%;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact label, .contact input{
+    margin-top: 2rem;
+}
+
+.contactSelector{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact input {
+    border: none;
+    border-bottom: 2px solid #002745;
+    font-family: 'Nunito', sans-serif;
+    font-size: medium;
+    color: #002745;
+}
+
+.contact ::placeholder{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+input[type='submit']{
+    border: none;
+    background-color:#002745;
+    color:#ffffff;
+    margin-top: 30px;
+    float: right;
+}
+
 .coverColor{
     padding-top: 100px;
     padding-bottom: 100px;

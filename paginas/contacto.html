@@ -67,28 +67,31 @@
                     <p class="subtitulo">
                         Dejame tu consulta
                     </p>
-                    <div>
+
+                    <div class="contact">
                         <input type="text" placeholder="Nombre y apellido">
+                    
+                    <div class="contactSelector">
+                        <div>
+                            <input type="radio" name="individuo_empresa" value="Individuo">
+                            <label for="individuo">Individuo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="individuo_empresa" value="Empresa">
+                            <label for="empresa">Empresa</label>
+                        </div>
                     </div>
-    
-                    <input type="radio" name="individuo_empresa" value="Individuo">
-                    <label for="individuo">Individuo</label>
-                    <input type="radio" name="individuo_empresa" value="Empresa">
-                    <label for="empresa">Empresa</label>
-    
-                    <div>
+        
                         <input type="email" placeholder="Email">
-                    </div>
-    
-                    <div>
+
                         <input type="text" placeholder="Asunto">
-                    </div>
-    
-                    <div>
+                        
                         <input type="text" placeholder="Mensaje">
                     </div>
-    
-                    <input type="submit" value="Enviar">
+                    
+                    <div>
+                        <input type="submit" value="Enviar" class="boton">
+                    </div>
                 </form>
             </section>
         </main>
