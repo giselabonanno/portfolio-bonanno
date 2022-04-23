@@ -389,6 +389,12 @@ footer h2{
     text-decoration: none;
 }
 
+.footerRedes :hover{
+    transform: scale(1);
+}
+
+/* Listo para mergear */
+
 @media screen and (max-width: 768px) {
     .contenedor {
     grid-template-areas:
