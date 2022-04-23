@@ -60,10 +60,6 @@ font-family: 'Nunito Sans', sans-serif;
     height: 5rem;
 }
 
-.active{
-    color: #b98ae6;
-}
-
 .cabeceraNavegacion__lista{
     list-style: none;
     display: flex;
@@ -74,6 +70,10 @@ font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
     margin: 15px;
     color: #002745;
+}
+
+.cabeceraNavegacion__lista li :active{
+    color: #b98ae6;
 }
 
 .cabeceraNavegacion__lista li :hover{
@@ -222,6 +222,7 @@ input[type='submit']{
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: all 1s;
 }
 
 .boton:hover{
@@ -379,6 +380,7 @@ footer h2{
 
 .footerColumn a:hover{
     color: #b98ae6;
+    transform: scale(1);
 }
 
 .footerRedes{
