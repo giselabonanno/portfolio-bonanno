@@ -263,6 +263,9 @@ input[type='submit']{
 }
 
 .conocimientos{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -284,6 +287,12 @@ input[type='submit']{
 
 .conocimientos__item img{
     padding-top: 10px;
+}
+
+.seccionLaboral{
+    min-height: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .homeServicios{
@@ -479,11 +488,18 @@ footer h2{
     .conocimientos{
         flex-direction: column;
         width: 100%;
+        border-bottom: solid #b98ae6 1.5px;
+        padding-bottom: 20%;
     }
 
     .conocimientos__item{
         align-items: center;
         width: 100%;
+    }
+
+    .seccionLaboral{
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 
     .coverContact{
