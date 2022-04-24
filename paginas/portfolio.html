@@ -14,41 +14,56 @@
     
     <title>GB | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <div class="contenedor">
-        <header class="header-area header-grid">
-            <a href="../index.html" class="cabeceraLogo">
-                <img src="../imagenes/logo-gb.png" alt="Logo Gisela Bonanno">
-            </a>
-            <nav class="cabeceraNavegacion">
-                <ul class="cabeceraNavegacion__lista">
-                    <li>
-                        <a href="../index.html"> Home </a>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand cabeceraLogo" href="../index.html">
+                    <img src="../imagenes/logo-gb.png" alt="Logo Gisela Bonanno">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse cabeceraNavegacion" id="navbarNav">
+                <ul class="navbar-nav cabeceraNavegacion__lista">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="./sobremi.html"> Sobre mí </a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../paginas/sobremi.html">Sobre Mí</a>
                     </li>
-                    <li>
-                        <a href="./servicios.html"> Servicios </a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
                     </li>
-                    <li>
-                        <a href="#" class="active"> Portfolio </a>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Portfolio</a>
                     </li>
-                    <li>
-                        <a href="./contacto.html"> Contacto </a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
+                </div>
+            </div>
+        </nav>
+    </header>
         
-        <main class="main-area main-grid">
-            <section class="cover" data-aos="zoom-in">
-                <div>
+    <main>
+        <section class="container cover" data-aos="zoom-in">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <h2 class="coverTitulo__secciones">
                         Portfolio
                     </h2>
@@ -57,94 +72,96 @@
                     </a>
                 </div>
 
-                <div class="coverColumn">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
                     <p>
                         Trabajo en proyectos de comunicación y difusión del patrimonio cultural, educativo y social. 
                         <br>
                         Así como también en proyectos que contribuyan a crear un mundo más justo y sustentable.
                     </p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="seccion" data-aos="fade-up">
-                <h3 class="subtituloSeccion">Branding</h3>
-                <p class="descripcionSeccion">
-                    Entender cuál es tu misión y tu audiencia es el primer paso para crear una identidad corporativa sólida. Ofrecemos asesoramiento con la investigación previa, definición de objetivos, diseño de imagen corporativa, manual de marca y aplicaciones gráficas.
-                </p>
-            
-                <div class="homePorfotlio">
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/branding1.jpg" alt="Diseño de logotipo Tubal">
-                    </div>
-
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/branding2.jpg" alt="Diseño de logotipo Bursa">
-                    </div>
-
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/branding3.jpg" alt="Diseño de logotipo Tubal">
-                    </div>
+        <section class="container portfolio" data-aos="fade-up">
+            <h3 class="subtituloSeccion">Branding</h3>
+            <p class="descripcionSeccion">
+                Entender cuál es tu misión y tu audiencia es el primer paso para crear una identidad corporativa sólida. Ofrecemos asesoramiento con la investigación previa, definición de objetivos, diseño de imagen corporativa, manual de marca y aplicaciones gráficas.
+            </p>
+        
+            <div class="homePorfotlio">
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/branding1.jpg" alt="Diseño de logotipo Tubal">
                 </div>
-            </section>
 
-            <section class="seccion" data-aos="fade-up">
-                <h3 class="subtituloSeccion">Visualización de datos</h3>
-                <p class="descripcionSeccion">
-                    Transformar tus datos en visualizaciones atractivas para que la información sea más accesible y amigable. Desarrollamos infografías, gráficos personalizados, data dashboards interactivos y cualquier otro producto vinculado al diseño de información.
-                </p>
-            
-                <div class="homePorfotlio">
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/vd1.jpg" alt="Diseño de gráficos y editorial">
-                    </div>
-
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/vd2-home.jpg" alt="Diseño de gráficos y editorial">
-                    </div>
-
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/vd3.jpg" alt="Diseño de gráficos y editorial">
-                    </div>
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/branding2.jpg" alt="Diseño de logotipo Bursa">
                 </div>
-            </section>
 
-            <section class="seccion" data-aos="fade-up">
-                <h3 class="subtituloSeccion">Fotografía</h3>
-                <p class="descripcionSeccion">
-                    Conectar y contar historias a través de diferentes estilos visuales. Fotografía de productos, sociales, publicidad y experiencias digitales interactivas para hacer que tu historia sea memorable.
-                </p>
-                
-                <div class="homePorfotlio">
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/pf1.jpg" alt="Niño y su perro jugando">
-                    </div>
-            
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/pf2.jpg" alt="Hamburguesa y cerveza">
-                    </div>
-
-                    <div class="homePorfotlio__imagen">
-                        <img src="../imagenes/pf3.jpg" alt="Estantería con diferentes gorras">
-                    </div>
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/branding3.jpg" alt="Diseño de logotipo Tubal">
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
-        <footer class="footer-area footer-grid">
-            <div class="footerColumn">
-                <a href="../index.html">
+        <section class="container portfolio" data-aos="fade-up">
+            <h3 class="subtituloSeccion">Visualización de datos</h3>
+            <p class="descripcionSeccion">
+                Transformar tus datos en visualizaciones atractivas para que la información sea más accesible y amigable. Desarrollamos infografías, gráficos personalizados, data dashboards interactivos y cualquier otro producto vinculado al diseño de información.
+            </p>
+        
+            <div class="homePorfotlio">
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/vd1.jpg" alt="Diseño de gráficos y editorial">
+                </div>
+
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/vd2-home.jpg" alt="Diseño de gráficos y editorial">
+                </div>
+
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/vd3.jpg" alt="Diseño de gráficos y editorial">
+                </div>
+            </div>
+        </section>
+
+        <section class="container portfolio" data-aos="fade-up">
+            <h3 class="subtituloSeccion">Fotografía</h3>
+            <p class="descripcionSeccion">
+                Conectar y contar historias a través de diferentes estilos visuales. Fotografía de productos, sociales, publicidad y experiencias digitales interactivas para hacer que tu historia sea memorable.
+            </p>
+            
+            <div class="homePorfotlio">
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/pf1.jpg" alt="Niño y su perro jugando">
+                </div>
+        
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/pf2.jpg" alt="Hamburguesa y cerveza">
+                </div>
+
+                <div class="homePorfotlio__imagen">
+                    <img src="../imagenes/pf3.jpg" alt="Estantería con diferentes gorras">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid footer">
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+                <a href="#">
                     <img src="../imagenes/logo-gb-footer.png" alt="Logo" class="footerLogo">
                 </a>
             </div>
 
-            <div class="footerColumn">
+            <div class="col-lg-3 col-md-3 col-sm-12 text-center">
                 <h1>Gisela Natalia Bonanno</h1>
                 <h2>Diseño Gráfico / Fotografía</h2>
                 <a href="mailto:giselabonanno@gmail.com" target="_blank" class="footerEmail"> giselabonanno@gmail.com
                 </a>
             </div>
 
-            <div class="footerColumn">
+            <div class="col-lg-3 col-md-3 col-sm-12 text-center">
                 <a href="https://www.linkedin.com/in/gisela-natalia-bonanno-154480ab/" target="_blank"> 
                     <img src="../imagenes/logo-linkedin.png" alt="LogoLinkedin" class="footerRedes">
                 </a>
@@ -152,7 +169,11 @@
                     <img src="../imagenes/logo-behance.png" alt="LogoBehance" class="footerRedes">
                 </a>
             </div>
-    </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 AOS.init();

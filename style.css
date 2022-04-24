@@ -331,6 +331,10 @@ input[type='submit']{
     margin: 5px;
 }
 
+.portfolio{
+    margin-bottom: 30px;
+}
+
 /* FOOTER */
 .footer-grid{
     position: relative;
