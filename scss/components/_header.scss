@@ -1,0 +1,19 @@
+.header{
+    .navbar{
+        border-bottom: solid $color-secundario 1.5px;
+        font-family:'Nunito', sans-serif;
+    }
+
+    .cabeceraLogo{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .cabeceraNavegacion{
+        &__lista li:hover{
+            color: $color-secundario !important; 
+            transform: scale(1.1);
+        }
+    }
+    
+}

@@ -1,0 +1,37 @@
+.footer{
+    background-color: $color-principal;
+    min-height: 30vh;
+    padding-top: 20px;
+    color: #ffff;
+
+    .footerLogo{
+        width: 50px;
+    }
+
+    h1{
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h2{
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        color: $color-secundario;
+        margin-bottom: 10px;
+    }
+
+    .footerEmail{
+        text-decoration: none;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: underline;
+    
+        &:hover{
+            color: $color-secundario;
+            transform: scale(1.1);
+        }
+    }
+}

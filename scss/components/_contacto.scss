@@ -1,0 +1,81 @@
+.coverContact{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    width: 100%;
+
+    .coverColumn{
+        display: flex;
+        justify-content:start;
+        align-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .coverTitulo__secciones{
+            font-family:'Nunito', sans-serif;
+            font-size: 44px;
+            margin-bottom: 10px;
+        }
+
+        .mapaContact{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .subtitulo{
+            font-family: 'Nunito', sans-serif;
+            font-size: 26px;
+            color: $color-secundario;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+
+            input{
+                margin-top: 2rem;
+                border: none;
+                border-bottom: 2px solid $color-principal;
+                font-family: 'Nunito', sans-serif;
+                font-size: medium;
+                color: $color-principal;
+            }
+        }
+
+        .contactSelector{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            label{
+                margin-top: 2rem;
+            }
+        }
+
+        .boton{
+            text-decoration: none;
+            background-color: $color-principal;
+            color: #ffff;
+            padding: 10px;
+            border-radius: 3px;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            &:hover{
+                background-color: #b98ae6;
+                color: #002745;
+            }
+        }
+    }
+
+}

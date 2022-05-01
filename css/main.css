@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.header .navbar {
+  border-bottom: solid #b98ae6 1.5px;
+  font-family: 'Nunito', sans-serif; }
+
+.header .cabeceraLogo {
+  width: 5rem;
+  height: 5rem; }
+
+.header .cabeceraNavegacion__lista li:hover {
+  color: #b98ae6 !important;
+  transform: scale(1.1); }
+
+.footer {
+  background-color: #002745;
+  min-height: 30vh;
+  padding-top: 20px;
+  color: #ffff; }
+  .footer .footerLogo {
+    width: 50px; }
+  .footer h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  .footer h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #b98ae6;
+    margin-bottom: 10px; }
+  .footer .footerEmail {
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: underline; }
+    .footer .footerEmail:hover {
+      color: #b98ae6;
+      transform: scale(1.1); }

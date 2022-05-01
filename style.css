@@ -58,7 +58,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .cabeceraNavegacion__lista li :hover{
-    color: #b98ae6;
+    color: #b98ae6 !important; 
     transform: scale(1.1);
 }
 
@@ -388,9 +388,9 @@ footer h2{
     text-decoration: underline;
 }
 
-.footerColumn a:hover{
+.footerEmail:hover{
     color: #b98ae6;
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 .footerRedes{
@@ -400,7 +400,7 @@ footer h2{
 }
 
 .footerRedes :hover{
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 /* Listo para mergear */
