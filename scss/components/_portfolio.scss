@@ -1,0 +1,77 @@
+.cover{
+    padding-top: 200px;
+    padding-bottom: 250px;
+
+    .coverTitulo__secciones{
+        font-family:'Nunito', sans-serif;
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+
+    .boton{
+        text-decoration: none;
+        background-color: $color-principal;
+        color: #ffff;
+        padding: 10px;
+        border-radius: 3px;
+        margin-top: 30px;
+    
+        &:hover{
+            background-color: $color-secundario;
+            color: $color-principal;
+            transform: scale(1.1);
+        }
+    }
+
+    p{
+        padding-right: 10rem;
+    }
+}
+
+.portfolio{
+    margin-bottom: 10rem;
+
+    .subtituloSeccion{
+        font-family: 'Nunito', sans-serif;
+        font-size: 32px;
+        color:$color-principal;
+        text-align: center;
+    }
+
+    .descripcionSeccion{
+        text-align: center;
+    }
+
+    .homePorfotlio{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-top: 20px;
+
+        &__imagen{
+            width: 30%;
+            margin: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cover{
+        p{
+            margin-top: 30px;
+            padding-right: 3rem;
+        }
+    }
+
+    .homePorfotlio{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+
+        &__imagen{
+            width: 100%;
+        }
+    }
+
+}

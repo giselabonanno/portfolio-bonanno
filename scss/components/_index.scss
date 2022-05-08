@@ -1,0 +1,80 @@
+.backgroundBody{
+    background-image: url("../imagenes/home2.png");
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.cover{
+    &Titulo{
+        font-family:'Nunito', sans-serif;
+        font-size: 44px;
+    }
+
+    .subtitulo{
+        font-family: 'Nunito', sans-serif;
+        font-size: 26px;
+        color: #b98ae6;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+}
+
+.seccionConocimientos{
+    margin-top: 40px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #b98ae6;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & h3{
+        font-family: 'Nunito Sans', sans-serif;
+        font-variant-caps: all-petite-caps;
+        font-size: 24px;
+        font-size: 900;
+        color: #ffffff;
+    }
+
+    .homeConocimientos__item{
+        margin: 15px;
+    }
+
+    .homeConocimientos__item img{
+        padding-top: 10px;
+    }
+}
+
+.botonCentral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .boton{
+        text-decoration: none;
+        background-color: #002745;
+        color: #ffff;
+        padding: 10px;
+        border-radius: 3px;
+        position: relative;
+    
+        &:hover{
+            background-color: #b98ae6;
+            color: #002745;
+        }
+    }
+}
+
+.seccion{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

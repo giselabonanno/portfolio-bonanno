@@ -1,12 +1,13 @@
 .coverContact{
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
-    width: 100%;
 
     .coverColumn{
+        width: 100%;
         display: flex;
         justify-content:start;
         align-content: flex-start;
@@ -34,10 +35,10 @@
         }
 
         .contact{
+            width: 100%;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 100%;
 
             input{
                 margin-top: 2rem;
@@ -53,29 +54,55 @@
             margin-top: 5px;
             margin-bottom: 5px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
+            flex-wrap: wrap;
 
             label{
                 margin-top: 2rem;
             }
         }
-
-        .boton{
-            text-decoration: none;
-            background-color: $color-principal;
-            color: #ffff;
-            padding: 10px;
-            border-radius: 3px;
-            position: relative;
-            margin-top: 10px;
-            margin-bottom: 10px;
-
-            &:hover{
-                background-color: #b98ae6;
-                color: #002745;
-            }
+    }
+    
+    .boton{
+        text-decoration: none;
+        background-color: $color-principal;
+        color: #ffff;
+        padding: 10px;
+        border-radius: 3px;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: right;
+    
+        &:hover{
+            background-color: #b98ae6;
+            color: #002745;
+            transform: scale(1.1);
         }
     }
-
 }
+
+
+@media only screen and (max-width: 768px) {
+    .coverContact{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .coverColumn{
+        padding-bottom: 50px;
+    }
+}
+
+/* llamar al if
+
+@include mediaQuery (mobile){
+    Agregar las etiquetas
+}
+@include mediaQuery(tablet){
+    Agregar las etiquetas
+}
+*/

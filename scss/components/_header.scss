@@ -10,9 +10,21 @@
     }
 
     .cabeceraNavegacion{
+        &__lista{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content:end;
+        }
+
         &__lista li:hover{
-            color: $color-secundario !important; 
+            color: $color-secundario;
             transform: scale(1.1);
+        }
+
+        .nav-item{
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
     

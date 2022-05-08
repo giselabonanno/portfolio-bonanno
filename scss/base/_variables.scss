@@ -1,2 +1,80 @@
 $color-principal: #002745;
 $color-secundario: #b98ae6;
+
+/* MAPS */
+$tamanio-tipografia:(
+    titulo: 24px,
+    subitulo: 20px,
+    parrafo: 14px,
+    letra-chica: 12px,
+);
+
+$colores:(
+    color-principal:$color-principal,
+    color-secundario: #b98ae6,
+);
+
+
+/* EXTEND */
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+/* MIXIN */
+@mixin flexbox ($direction, $align){
+    display:flex;
+    direction: $direction;
+
+    @if $direction == column {
+        justify-content: center;
+    } @else {
+        justify-content: space-evenly;
+    }
+
+    align-items: $align;
+};
+
+@mixin mediaQuery ($pantalla){
+    @if $pantalla == 'mobile'{
+        @media only screen and (max-width:500px){
+            @content;
+        }
+    };
+    @if $pantalla == 'tablet'{
+        @media only screen and (max-width:780px){
+            @content;
+        }
+    };
+    @if $pantalla == 'desktop'{
+        @media only screen and (max-width:1024px){
+            @content;
+        }
+    };
+}
+
+/* CONDICIONALES 
+
+    if condicion {
+        pasa esto
+    } else {
+        pasa esto otro
+    }
+
+    si (tu me hubieras dicho siempre la verdad){
+        seria la mejor mujer
+    } else {
+        ahora te puedes marchar
+    }
+    
+    
+*/
+
+/* BUCLE FOR
+@for $item from 1 through 5{
+    .imagen#($item){
+        width: 200px;
+        height: 200px;
+    }
+} */
