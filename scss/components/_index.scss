@@ -79,6 +79,10 @@
     padding-bottom: 50px;
 }
 
+.carousel{
+    width: 25%;
+}
+
 @include mediaQuery(tablet){
     .backgroundBody {
         background-size:auto;
@@ -89,5 +93,10 @@
     .homePorfotlio__imagen{
             width: 30%;
             margin: 5px;
-        }
+    }
+
+    .carousel{
+        width: 100%;
+        margin-top: 4%;
+    }
 }

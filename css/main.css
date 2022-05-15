@@ -133,6 +133,9 @@ img {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.carousel {
+  width: 25%; }
+
 @media only screen and (max-width: 780px) {
   .backgroundBody {
     background-size: auto;
@@ -140,7 +143,10 @@ img {
     justify-content: right; }
   .homePorfotlio__imagen {
     width: 30%;
-    margin: 5px; } }
+    margin: 5px; }
+  .carousel {
+    width: 100%;
+    margin-top: 4%; } }
 
 .subtituloSeccion {
   font-family: 'Nunito', sans-serif;
