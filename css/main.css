@@ -1,29 +1,11 @@
 /* MAPS */
 /* EXTEND */
+.conocimientos, .homeServicios, .portfolio .homePorfotlio {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap; }
+
 /* MIXIN */
-/* CONDICIONALES 
-
-    if condicion {
-        pasa esto
-    } else {
-        pasa esto otro
-    }
-
-    si (tu me hubieras dicho siempre la verdad){
-        seria la mejor mujer
-    } else {
-        ahora te puedes marchar
-    }
-    
-    
-*/
-/* BUCLE FOR
-@for $item from 1 through 5{
-    .imagen#($item){
-        width: 200px;
-        height: 200px;
-    }
-} */
 * {
   margin: 0;
   padding: 0; }
@@ -83,6 +65,10 @@ img {
     width: 30px;
     list-style: none;
     text-decoration: none; }
+
+@media only screen and (max-width: 780px) {
+  .footerRedes {
+    margin-top: 10px; } }
 
 .backgroundBody {
   background-image: url("../imagenes/home2.png");
@@ -147,9 +133,18 @@ img {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+@media only screen and (max-width: 780px) {
+  .backgroundBody {
+    background-size: auto;
+    background-position: top;
+    justify-content: right; }
+  .homePorfotlio__imagen {
+    width: 30%;
+    margin: 5px; } }
+
 .subtituloSeccion {
   font-family: 'Nunito', sans-serif;
-  font-size: 32px;
+  font-size: 44px;
   color: #002745;
   text-align: center; }
 
@@ -160,11 +155,8 @@ img {
   padding-top: 5%;
   padding-bottom: 5%;
   height: 100%;
-  display: flex;
   justify-content: space-evenly;
-  align-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
   border-bottom: solid #b98ae6 1.5px; }
   .conocimientos__item {
     width: 20%;
@@ -197,7 +189,7 @@ img {
   padding-left: 15px;
   font-size: 14px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .conocimientos {
     flex-direction: column;
     width: 100%;
@@ -213,11 +205,8 @@ img {
       margin-bottom: 20px; } }
 
 .homeServicios {
-  display: flex;
   justify-content: space-between;
-  align-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
   margin-bottom: 50px; }
   .homeServicios__item {
     width: 20%;
@@ -239,7 +228,7 @@ img {
   background-color: #b98ae6;
   padding: 10px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .homeServicios {
     flex-wrap: wrap;
     flex-direction: column;
@@ -280,22 +269,18 @@ img {
   margin-bottom: 10rem; }
   .portfolio .subtituloSeccion {
     font-family: 'Nunito', sans-serif;
-    font-size: 32px;
     color: #002745;
     text-align: center; }
   .portfolio .descripcionSeccion {
     text-align: center; }
   .portfolio .homePorfotlio {
-    display: flex;
     justify-content: space-between;
-    align-content: center;
-    flex-wrap: wrap;
     padding-top: 20px; }
     .portfolio .homePorfotlio__imagen {
       width: 30%;
       margin: 5px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .cover p {
     margin-top: 30px;
     padding-right: 3rem; }
@@ -304,7 +289,7 @@ img {
     flex-wrap: wrap;
     margin-bottom: 2rem; }
     .homePorfotlio__imagen {
-      width: 100%; } }
+      width: 100% !important; } }
 
 .coverContact {
   width: 100%;
@@ -369,7 +354,7 @@ img {
       color: #002745;
       transform: scale(1.1); }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .coverContact {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -378,13 +363,3 @@ img {
     flex-wrap: wrap; }
   .coverColumn {
     padding-bottom: 50px; } }
-
-/* llamar al if
-
-@include mediaQuery (mobile){
-    Agregar las etiquetas
-}
-@include mediaQuery(tablet){
-    Agregar las etiquetas
-}
-*/

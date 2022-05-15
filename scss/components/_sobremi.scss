@@ -1,6 +1,6 @@
 .subtituloSeccion{
     font-family: 'Nunito', sans-serif;
-    font-size: 32px;
+    font-size: map-get($tamanio-tipografia , titulo );
     color:$color-principal;
     text-align: center;
 }
@@ -13,11 +13,9 @@
     padding-top: 5%;
     padding-bottom: 5%;
     height: 100%;
-    display: flex;
+    @extend %flex-center;
     justify-content: space-evenly;
-    align-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
     border-bottom: solid $color-secundario 1.5px;
 
     &__item{
@@ -27,7 +25,7 @@
         & h3{
             font-family:'Nunito', sans-serif;
             font-variant-caps: all-petite-caps;
-            font-size: 24px;
+            font-size: map-get($tamanio-tipografia , versalitas );
             font-size: 900;
             color: $color-principal;
         }
@@ -49,7 +47,7 @@
     .empresa{
         font-family:'Nunito', sans-serif;
         font-variant-caps: all-petite-caps;
-        font-size: 24px;
+        font-size: map-get($tamanio-tipografia , versalitas );
         font-size: 900;
         color: $color-principal;
         margin-bottom: 3px;
@@ -61,11 +59,11 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@include mediaQuery(tablet){
     .conocimientos{
         flex-direction: column;
         width: 100%;
-        border-bottom: solid #b98ae6 1.5px;
+        border-bottom: solid $color-secundario 1.5px;
         padding-bottom: 20%;
 
         &__item{

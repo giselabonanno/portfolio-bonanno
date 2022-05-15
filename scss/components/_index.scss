@@ -9,13 +9,13 @@
 .cover{
     &Titulo{
         font-family:'Nunito', sans-serif;
-        font-size: 44px;
+        font-size: map-get($tamanio-tipografia , titulo );
     }
 
     .subtitulo{
         font-family: 'Nunito', sans-serif;
-        font-size: 26px;
-        color: #b98ae6;
+        font-size: map-get($tamanio-tipografia , destacado );
+        color: $color-secundario;
         margin-top: 5px;
         margin-bottom: 30px;
         line-height: 1.2;
@@ -26,7 +26,7 @@
     margin-top: 40px;
     padding-top: 4%;
     padding-bottom: 4%;
-    background-color: #b98ae6;
+    background-color: $color-secundario;
     border-radius: 10px;
     height: 100%;
     display: flex;
@@ -38,7 +38,7 @@
     & h3{
         font-family: 'Nunito Sans', sans-serif;
         font-variant-caps: all-petite-caps;
-        font-size: 24px;
+        font-size: map-get($tamanio-tipografia , versalitas );
         font-size: 900;
         color: #ffffff;
     }
@@ -61,15 +61,15 @@
 
     .boton{
         text-decoration: none;
-        background-color: #002745;
+        background-color: $color-principal;
         color: #ffff;
         padding: 10px;
         border-radius: 3px;
         position: relative;
     
         &:hover{
-            background-color: #b98ae6;
-            color: #002745;
+            background-color: $color-secundario;
+            color: $color-principal;
         }
     }
 }
@@ -77,4 +77,17 @@
 .seccion{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+@include mediaQuery(tablet){
+    .backgroundBody {
+        background-size:auto;
+        background-position: top;
+        justify-content:right;
+    }
+
+    .homePorfotlio__imagen{
+            width: 30%;
+            margin: 5px;
+        }
 }

@@ -40,3 +40,9 @@
         text-decoration: none;
     }
 }
+
+@include mediaQuery(tablet){
+    .footerRedes{
+        margin-top: 10px;
+    }
+}

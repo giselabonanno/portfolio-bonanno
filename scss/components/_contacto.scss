@@ -16,7 +16,7 @@
 
         .coverTitulo__secciones{
             font-family:'Nunito', sans-serif;
-            font-size: 44px;
+            font-size: map-get($tamanio-tipografia , titulo );
             margin-bottom: 10px;
         }
 
@@ -27,7 +27,7 @@
 
         .subtitulo{
             font-family: 'Nunito', sans-serif;
-            font-size: 26px;
+            font-size: map-get($tamanio-tipografia , destacado );
             color: $color-secundario;
             margin-top: 5px;
             margin-bottom: 30px;
@@ -75,15 +75,15 @@
         float: right;
     
         &:hover{
-            background-color: #b98ae6;
-            color: #002745;
+            background-color: $color-secundario;
+            color: $color-principal;
             transform: scale(1.1);
         }
     }
 }
 
 
-@media only screen and (max-width: 768px) {
+@include mediaQuery(tablet){
     .coverContact{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -96,13 +96,3 @@
         padding-bottom: 50px;
     }
 }
-
-/* llamar al if
-
-@include mediaQuery (mobile){
-    Agregar las etiquetas
-}
-@include mediaQuery(tablet){
-    Agregar las etiquetas
-}
-*/

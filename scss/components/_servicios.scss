@@ -1,9 +1,7 @@
 .homeServicios{
-    display: flex;
+    @extend %flex-center;
     justify-content: space-between;
-    align-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 50px;
 
     &__item{
@@ -12,9 +10,9 @@
 
         & h3{
             font-variant-caps: all-petite-caps;
-            font-size: 24px;
+            font-size: map-get($tamanio-tipografia , versalitas );
             font-size: 900;
-            color: #b98ae6;
+            color: $color-secundario;
         }
 
         & img{
@@ -26,14 +24,14 @@
 .destacado{
     text-align: center;
     font-family:'Nunito', sans-serif;
-    font-size: 24px;
+    font-size: map-get($tamanio-tipografia , versalitas );
     color:#ffff;
     font-style: italic;
     background-color: $color-secundario;
     padding: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@include mediaQuery(tablet){
     .homeServicios{
         flex-wrap: wrap;
         flex-direction: column;
@@ -44,7 +42,7 @@
             width: 90%;
             align-content: center;
             text-align: center;
-            border-bottom:solid #b98ae6 1px;
+            border-bottom:solid $color-secundario 1px;
 
             & p{
                 margin-bottom: 2rem;

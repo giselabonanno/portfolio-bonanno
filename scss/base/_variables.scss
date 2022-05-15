@@ -3,23 +3,19 @@ $color-secundario: #b98ae6;
 
 /* MAPS */
 $tamanio-tipografia:(
-    titulo: 24px,
-    subitulo: 20px,
+    titulo: 44px,
+    subitulo: 32px,
+    destacado: 26px,
+    versalitas: 24px,
     parrafo: 14px,
     letra-chica: 12px,
 );
 
-$colores:(
-    color-principal:$color-principal,
-    color-secundario: #b98ae6,
-);
-
-
 /* EXTEND */
 %flex-center{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 };
 
 /* MIXIN */
@@ -53,28 +49,3 @@ $colores:(
         }
     };
 }
-
-/* CONDICIONALES 
-
-    if condicion {
-        pasa esto
-    } else {
-        pasa esto otro
-    }
-
-    si (tu me hubieras dicho siempre la verdad){
-        seria la mejor mujer
-    } else {
-        ahora te puedes marchar
-    }
-    
-    
-*/
-
-/* BUCLE FOR
-@for $item from 1 through 5{
-    .imagen#($item){
-        width: 200px;
-        height: 200px;
-    }
-} */
