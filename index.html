@@ -32,8 +32,8 @@
 
 <body class="backgroundBody">
     <div>
-        <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <header class="header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand cabeceraLogo" href="#">
                       <img src="./imagenes/logo-gb.png" alt="Logo Gisela Bonanno">
@@ -71,22 +71,34 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <p>Hola, soy</p>
-                        <h1 class="coverTitulo">Gisela Bonanno</h1>
-                        <h2 class="subtitulo">Diseñadora Gráfica 
+                        <h1 class="coverTitulo">
+                            Gisela Bonanno
+                        </h1>
+                        <h2 class="subtitulo">
+                            Diseñadora Gráfica 
                             <br>
-                            & Fotógrafa</h2>
+                            & Fotógrafa
+                        </h2>
                     </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
-                    <p>
-                        Finalicé mis estudios de Diseño Gráfico, en la Universidad de Buenos Aires, en el año 2013.
-                        Comencé mi experiencia laboral en el área editorial, y luego continué en el área de marketing. Hoy deseo seguir creciendo y profundizar aún más mis conocimientos y experiencias personales y profesionales.
-                    </p>
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+                        <p>
+                            Finalicé mis estudios de Diseño Gráfico, en la Universidad de Buenos Aires, en el año 2013.
+                            Comencé mi experiencia laboral en el área editorial, y luego continué en el área de marketing. Hoy deseo seguir creciendo y profundizar aún más mis conocimientos y experiencias personales y profesionales.
+                        </p>
+                    </div>
+
+                    <div class="botonCentral">
+                        <a href="#sectionUno" class="boton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffff" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
             </section>
 
-            <section class="container" data-aos="fade-up">
+            <section id="sectionUno" class="container" data-aos="fade-up">
                 <p class="subtituloSeccion">
                     Conocimientos
                 </p>
@@ -97,31 +109,31 @@
                 <div class="seccionConocimientos">
                     <div class="row d-flex justify-content-evenly homeConocimientos__item">
                         <div class="col-lg-3 col-md-3 col-sm-12">
-                            <h3>Adobe Indesing</h3>
-                            <img src="./imagenes/barra-habilidad.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad.">
+                            <h3>Adobe InDesing</h3>
+                            <img src="./imagenes/barra-habilidad.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad en Adobe Indesing.">
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <h3>Adobe Photoshop</h3>
-                            <img src="./imagenes/barra-habilidad-2.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad.">
+                            <img src="./imagenes/barra-habilidad-2.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad en Adobe Photoshop.">
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <h3>Adobe Illustrator</h3>
-                            <img src="./imagenes/barra-habilidad-2.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad.">
+                            <img src="./imagenes/barra-habilidad-2.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad en Adobe Illustrator.">
                         </div>
                     </div>    
 
                     <div class="row d-flex justify-content-evenly homeConocimientos__item">
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <h3>Adobe After Effects</h3>
-                            <img src="./imagenes/barra-habilidad-1.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad.">
+                            <img src="./imagenes/barra-habilidad-1.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad en Adobe After Effects.">
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <h3>Adobe Premier</h3>
-                            <img src="./imagenes/barra-habilidad-1.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad.">
+                            <img src="./imagenes/barra-habilidad-1.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad en Adobe Premier.">
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <h3>Adobe Lightroom</h3>
-                            <img src="./imagenes/barra-habilidad.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad.">
+                            <img src="./imagenes/barra-habilidad.png" alt="Barra que muestra el porcentaje de conocimiento sobre la habilidad en Adobe Lightroom.">
                         </div>
                 </div>
                 </div>
@@ -180,50 +192,53 @@
                     Branding | Tarjetería social | Encuadernaciones | Redes Sociales | Fotografía | Web.
                 </p>
 
-            <!-- Portfolio carrousel -->
-            <div class="d-inline-flex justify-content-evenly flex-wrap">
-                <div class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./imagenes/branding1.jpg" class="w-100" alt="Diseño de logotipo Tubal">
+                <!-- Portfolio carrousel -->
+                <div class="d-inline-flex justify-content-evenly flex-wrap">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagenes/branding1.jpg" class="w-100" alt="Diseño de logotipo Tubal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/branding3.jpg" class="w-100" alt="Diseño de gráficos y editorial">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/branding4.jpg" class="w-100" alt="Estantería con diferentes gorras">
+                        </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/branding3.jpg" class="w-100" alt="Diseño de gráficos y editorial">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/branding4.jpg" class="w-100" alt="Estantería con diferentes gorras">
-                    </div>
-                    </div>
-                </div>
 
-                <div class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./imagenes/vd1.jpg" class="w-100" alt="Diseño de logotipo Tubal">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagenes/vd1.jpg" class="w-100" alt="Diseño de logotipo Tubal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/vd2-home.jpg" class="w-100" alt="Diseño de gráficos y editorial">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/vd3.jpg" class="w-100" alt="Estantería con diferentes gorras">
+                        </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/vd2-home.jpg" class="w-100" alt="Diseño de gráficos y editorial">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/vd3.jpg" class="w-100" alt="Estantería con diferentes gorras">
-                    </div>
-                    </div>
-                </div>
 
-                <div class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./imagenes/pf1.jpg" class="w-100" alt="Diseño de logotipo Tubal">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/pf2.jpg" class="w-100" alt="Diseño de gráficos y editorial">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/pf3.jpg" class="w-100" alt="Estantería con diferentes gorras">
-                    </div>
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagenes/pf1.jpg" class="w-100" alt="Diseño de logotipo Tubal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/pf2.jpg" class="w-100" alt="Diseño de gráficos y editorial">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/pf3.jpg" class="w-100" alt="Estantería con diferentes gorras">
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="botonCentral">
+                    <a href="./paginas/portfolio.html" class="boton">Ver más</a>
+                </div>
             </section>
         </main>
 

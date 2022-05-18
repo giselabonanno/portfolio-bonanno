@@ -1,4 +1,10 @@
+.coverColor{
+    background-color: $color-secundario;
+    color: #ffff;
+}
+
 .subtituloSeccion{
+    margin-top: 50px;
     font-family: 'Nunito', sans-serif;
     font-size: map-get($tamanio-tipografia , titulo );
     color:$color-principal;

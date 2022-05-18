@@ -1,8 +1,12 @@
+.coverColorBlue{
+    background-color: $color-principal;
+    color: #ffff;
+}
+
 .homeServicios{
     @extend %flex-center;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 50px;
 
     &__item{
         width: 20%;
