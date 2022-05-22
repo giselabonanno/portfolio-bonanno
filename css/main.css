@@ -377,3 +377,11 @@ img {
     flex-wrap: wrap; }
   .coverColumn {
     padding-bottom: 50px; } }
+
+.coverColor {
+  background-color: #b98ae6;
+  color: #ffff; }
+  .coverColor .coverTitulo__secciones {
+    font-family: 'Nunito', sans-serif;
+    font-size: 44px;
+    margin-bottom: 10px; }

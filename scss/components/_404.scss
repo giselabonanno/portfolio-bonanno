@@ -1,0 +1,10 @@
+.coverColor{
+    background-color: $color-secundario;
+    color: #ffff;
+
+    .coverTitulo__secciones{
+        font-family:'Nunito', sans-serif;
+        font-size: map-get($tamanio-tipografia , titulo );
+        margin-bottom: 10px;
+    }
+}
